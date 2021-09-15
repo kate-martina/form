@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+           <h1 id="title">Encuesta sobre Hábitos Alimenticios</h1>
+           <p id="description">Agradecemos el tiempo que nos brinda para llenar este formulario </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nombre</label>
+                <input id="name"  class="form-control" type="text" name="name" placeholder="Nombre y Apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" class="form-control" type="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Edad</label>
+                <input id="number" class="form-control" type="number" min="18" max="99" name="age" placeholder="Edad">
+            </div>
+            <div class="form-group">
+                <p>¿A qué se dedica actualmente?</p>
+                <select id="dropdown" name="job" class="form-control" required>
+                    <option disabled selected value>Selecciona un item</option>
+                    <option value="study-full-time">Estudio a tiempo completo</option>
+                    <option value="job-study">Estudio y trabajo</option>
+                    <option value="job-full-time">Trabajo tiempo completo</option>
+                    <option value="job-part-time">Trabajo a medio tiempo</option>
+                    <option value="homemaker">Me dedico a mi casa</option>
+                    <option value="preferNo">Prefiero no decirlo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>¿Cuánta agua consume al día?</p>
+                <label>
+                    <input type="radio" name="drink-water" value="1litro" class="input-radio" checked> 1 litro
+                </label>
+                <label>
+                    <input type="radio" name="drink-water" value="2litros" class="input-radio"> 2 litros
+                </label>
+                <label>
+                    <input type="radio" name="drink-water" value="maslitros" class="input-radio"> Más de 2 litros
+                </label>
+                <label>
+                    <input type="radio" name="drink-water" value="nunca" class="input-radio"> No bebo agua
+                </label>
+            </div>
+            <div class="form-group">
+                <p>¿Desayuna a diario?</p>
+                <label>
+                    <input type="radio" name="breakfast" value="siempre" class="input-radio" checked> Siempre
+                </label>
+                <label>
+                    <input type="radio" name="breakfast" value="aVeces" class="input-radio"> A veces
+                </label>
+                <label>
+                    <input type="radio" name="breakfast" value="nunca" class="input-radio"> Nunca
+                </label>
+                </div>
+            <div class="form-group">
+                <p>¿Consume frutas y verduras?</p>
+                <label>
+                    <input type="radio" name="fruit-vegetables" class="input-checkbox" value="adiario"checked>A diario
+                </label>
+                <label>
+                    <input type="radio" name="fruit-vegetables" class="input-radio" value="frecuentemente">Frecuentemente
+                </label>
+                <label>
+                    <input type="radio" name="fruit-vegetables" class="input-radio" value="casinunca">Casi nunca
+                </label>
+                <label>
+                    <input type="radio" name="fruit-vegetables" class="input-radio" value="nunca">Nunca
+                </label>
+            </div>
+            <div class="form-group">
+                <p>¿Cómo consume sus verduras?</p>
+                <label>
+                    <input name="eat-vegetables" type="checkbox" value="salad" class="input-checkbox">En ensalada
+                </label>
+                <label>
+                    <input name="eat-vegetables" type="checkbox" value="cook" class="input-checkbox">Cocidas
+                </label>
+                <label>
+                    <input name="eat-vegetables" type="checkbox" value="steamed" class="input-checkbox">Al vapor
+                </label>
+                <label>
+                    <input name="eat-vegetables" type="checkbox" value="juice" class="input-checkbox">En jugos
+                </label>
+                <label>
+                    <input name="eat-vegetables" type="checkbox" value="fried" class="input-checkbox">Fritas        
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Coméntenos ¿qué hábitos alimenticios desearía mejorar en su vida diaria?</p>
+                <textarea id="get-better" name="get-better"  class="input-textarea" placeholder="Coméntanos aquí"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit" class="submit-buttom">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
